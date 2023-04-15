@@ -1,0 +1,740 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HAIRLY</title>
+    <link rel="stylesheet" href="index.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    
+    <nav class="navbar navbar-expand-lg bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"><img src="imgvideo/logo1.PNG" class="logo1-1" alt=""></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page"  href="#">Home</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#section1" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Products
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#section1">Shampoo</a></li>
+                  <li><a class="dropdown-item" href="#section2">Conditioner</a></li>
+                  <li><a class="dropdown-item" href="#section3">Beard</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#section4">Package</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#pricing">Pricing</a>
+              </li>
+              
+              <li class="nav-item">
+                <a class="nav-link" href="#section5">Login</a>
+              </li>
+            </ul>
+           
+           
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+            
+          </div>
+          
+          
+        </div>
+        
+        
+      </nav>
+      <div class="clas1"> <div class="clas2"> <a href=""><i class="fa fa-truck fa-lg"></i> &nbsp;Free Shipping</a>   <a href="#section5"><i class="fa fa-user fa-lg"></i> &nbsp;Login</a> <a href="card.html"><i class="fa fa-shopping-basket fa-lg"></i> &nbsp;Cart</a>  </div> </div>
+
+    <div class="img1"></div>
+
+    <header>
+      
+  
+      <div class="pricing-header p-3 pb-md-4 mx-auto text-center">
+        <h1 class="display-4 fw-normal">HAIRLY</h1>
+        <p class="fs-5 text-muted">For the healthy hair you love.</p>
+      </div>
+    </header>
+    
+
+
+
+    <div  class="filter1">
+        <div class="filter1-1">
+            <div class="col-md-6" data-mdb-filter="color">
+                <span class="fa-lg">Filter: </span>
+      
+                <div class="form-check mt-3">
+                  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="black" autocompleted="">
+                  <label class="form-check-label" for="inlineRadio1">Shampoo</label>
+                </div>
+      
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="red" autocompleted="">
+                  <label class="form-check-label" for="inlineRadio2">Conditioner</label>
+                </div>
+      
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="blue" autocompleted="">
+                  <label class="form-check-label" for="inlineRadio3">Beard</label>
+                </div>
+      
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio4" value="gray" autocompleted="">
+                  <label class="form-check-label" for="inlineRadio4">Package</label>
+                </div>
+            </div>
+
+
+            
+           
+            
+
+        </div>
+       
+       
+    </div>
+  <div class="button1"> <button type="button" class="btn btn-primary mt-3" id="resetButton" style=>
+    Clear
+  </button></div>
+    
+
+    
+
+
+
+
+    
+    <section class="pb-4">
+        <div class="bg-white border rounded-5">
+          
+      <section class="w-100 p-4 justify-content-center">
+            <div class="row justify-content-center mb-5" id="spinner-example-filters">
+              <p class="text-center fa-lg fw-bold">Price:</p>
+      
+              <div class="col-md-3 mt-3 text-center">
+                <div class="form-outline">
+                  <input type="number" id="typeNumber" class="form-control active1" value="0">
+                  <label class="form-label" for="typeNumber" style="margin-left: 0px;">Minimum</label>
+                <div class="form-notch"><div class="form-notch-leading" style="width: 9px;"></div><div class="form-notch-middle" style="width: 60px;"></div><div class="form-notch-trailing"></div></div></div>
+              </div>
+      
+              <div class="col-md-3 mt-3 text-center">
+                <div class="form-outline">
+                  <input type="number" id="typeNumber2" class="form-control active1" value="999">
+                  <label class="form-label" for="typeNumber2" style="margin-left: 0px;">Maximum</label>
+                <div class="form-notch"><div class="form-notch-leading" style="width: 9px;"></div><div class="form-notch-middle" style="width: 63.2px;"></div><div class="form-notch-trailing"></div></div></div>
+              </div>
+              <div class="button1"><button type="button" class="btn btn-primary">Search</button></div>
+              
+            </div>
+      
+            <div id="section1" class="row text-center mt-3" id="spinner-example-data" style="max-height: 800px; overflow-y: scroll">
+                   
+                    <div class="col-md-4 mt-3">
+                        <div class="card shadow-2">
+                          <img src="imgvideo/schampoo4.webp" style=" width: 100%;" class="card-img-top" alt="...">
+        
+                          <div class="card-body">
+                            <h5 class="card-title">Grow Perfect</h5>
+                            <p class="card-text">
+                              <span class="namaleno">139:-</span>
+                              119:-
+                            </p>
+                            <a href="#" class="btn btn-primary ripple-surface">Add to Cart</a>
+                          </div>
+                        </div>
+                      </div>
+                      
+        
+                      <div class="col-md-4 mt-3">
+                        <div class="card shadow-2">
+                          <img src="imgvideo/schampo05.webp"  style=" width: 100%;" class="card-img-top" alt="...">
+        
+                          <div class="card-body">
+                            <h5 class="card-title">Split Fix</h5>
+                            <p class="card-text">
+                              149:-
+                            </p>
+                            <a href="#" class="btn btn-primary ripple-surface">Add to Cart</a>
+                          </div>
+                        </div>
+                      </div>
+                      
+        
+                      <div class="col-md-4 mt-3">
+                        <div class="card shadow-2">
+                          <img src="imgvideo/schampo06.webp"  style=" width: 100%;" class="card-img-top" alt="...">
+        
+                          <div class="card-body">
+                            <h5 class="card-title">Split Fix Plus</h5>
+                            <p class="card-text">
+                              179:-
+                            </p>
+                            <a href="#" class="btn btn-primary ripple-surface">Add to Cart</a>
+                          </div>
+                        </div>
+                      </div>
+                      
+        
+                      <div class="col-md-4 mt-3">
+                        <div class="card shadow-2">
+                          <img src="imgvideo/schampo07.webp"  style=" width: 100%;" class="card-img-top" alt="...">
+        
+                          <div class="card-body">
+                            <h5 class="card-title">Curl Crush</h5>
+                            <p class="card-text">
+                              <span class="namaleno">179:-</span>
+                              159:-
+                            </p>
+                            <a href="#" class="btn btn-primary ripple-surface">Add to Cart</a>
+                          </div>
+                        </div>
+                      </div>
+                      
+        
+                      <div class="col-md-4 mt-3">
+                        <div class="card shadow-2">
+                          <img src="imgvideo/schampo08.webp"  style="width: 100%;" class="card-img-top" alt="...">
+        
+                          <div class="card-body">
+                            <h5 class="card-title">Moisture Hero</h5>
+                            <p class="card-text">
+                              169:-
+                            </p>
+                            <a href="#" class="btn btn-primary ripple-surface">Add to Cart</a>
+                          </div>
+                        </div>
+                      </div>
+                      
+        
+                      <div class="col-md-4 mt-3">
+                        <div class="card shadow-2">
+                          <img src="imgvideo/schampo09.webp"  style=" width: 100%;" class="card-img-top" alt="...">
+        
+                          <div class="card-body">
+                            <h5 class="card-title">Curl Crush Plus</h5>
+                            <p class="card-text">
+                              159:-
+                            </p>
+                            <a href="#" class="btn btn-primary ripple-surface">Add to Cart</a>
+                          </div>
+                        </div>
+                      </div>
+                      
+                  
+      
+                    <div id="section2" class="col-md-4 mt-3">
+                      <div class="card shadow-2">
+                        <img src="imgvideo/wash01.webp"  style="width: 100%;" class="card-img-top" alt="...">
+      
+                        <div class="card-body">
+                          <h5 class="card-title">Curl Crush Conditioner</h5>
+                          <p class="card-text">
+                            <span class="namaleno">119:-</span>
+                            89:-
+                          </p>
+                          <a href="#" class="btn btn-primary ripple-surface">Add to Cart</a>
+                        </div>
+                      </div>
+                    </div>
+                    
+      
+                    <div class="col-md-4 mt-3">
+                      <div class="card shadow-2">
+                        <img src="imgvideo/wash02.webp"  style=" width: 100%;" class="card-img-top" alt="...">
+      
+                        <div class="card-body">
+                          <h5 class="card-title">Scalp Conditioner</h5>
+                          <p class="card-text">
+                            109:-
+                          </p>
+                          <a href="#" class="btn btn-primary ripple-surface">Add to Cart</a>
+                        </div>
+                      </div>
+                    </div>
+                    
+      
+                    <div class="col-md-4 mt-3">
+                      <div class="card shadow-2">
+                        <img src="imgvideo/wash01.webp"  style=" width: 100%;" class="card-img-top" alt="...">
+      
+                        <div class="card-body">
+                          <h5 class="card-title">Curl Crush Plus Conditioner</h5>
+                          <p class="card-text">
+                            119:-
+                          </p>
+                          <a href="#" class="btn btn-primary ripple-surface">Add to Cart</a>
+                        </div>
+                      </div>
+                    </div>
+                    
+      
+                    <div id="section3" class="col-md-4 mt-3">
+                      <div class="card shadow-2">
+                        <img src="imgvideo/skeg01.webp"  style=" width: 100%;" class="card-img-top" alt="...">
+      
+                        <div class="card-body">
+                          <h5 class="card-title">Grooming Oil Beard</h5>
+                          <p class="card-text">
+                            129:-
+                          </p>
+                          <a href="#" class="btn btn-primary ripple-surface">Add to Cart</a>
+                        </div>
+                      </div>
+                    </div>
+                    
+      
+                    <div class="col-md-4 mt-3">
+                      <div class="card shadow-2">
+                        <img src="imgvideo/skeg02.webp"  style=" width: 100%;" class="card-img-top" alt="...">
+      
+                        <div class="card-body">
+                          <h5 class="card-title">Growth Serum Beard</h5>
+                          <p class="card-text">
+                            <span class="namaleno">119:-</span>
+                            99:-
+                          </p>
+                          <a href="#" class="btn btn-primary ripple-surface">Add to Cart</a>
+                        </div>
+                      </div>
+                    </div>
+                    
+      
+                    <div class="col-md-4 mt-3">
+                      <div class="card shadow-2">
+                        <img src="imgvideo/skeg03.webp"  style="width: 100%;" class="card-img-top" alt="...">
+      
+                        <div class="card-body">
+                          <h5 class="card-title">Shampoo Beard</h5>
+                          <p class="card-text">
+                            109:-
+                          </p>
+                          <a href="#" class="btn btn-primary ripple-surface">Add to Cart</a>
+                        </div>
+                      </div>
+                    </div>
+                    
+      
+                    <div id="section4" class="col-md-4 mt-3">
+                      <div class="card shadow-2">
+                        <img src="imgvideo/kit1.webp"  style=" width: 100%;" class="card-img-top" alt="...">
+      
+                        <div class="card-body">
+                          <h5 class="card-title">Package Split</h5>
+                          <p class="card-text">
+                            <span  class="namaleno">899:-</span>
+                            749:-
+                          </p>
+                          <a href="#" class="btn btn-primary ripple-surface">Add to Cart</a>
+                        </div>
+                      </div>
+                    </div>
+                    
+      
+                    <div class="col-md-4 mt-3">
+                      <div class="card shadow-2">
+                        <img src="imgvideo/kit02.webp"  style="width: 30vh; width: 100%;" class="card-img-top" alt="...">
+      
+                        <div class="card-body">
+                          <h5 class="card-title">Package Moisture</h5>
+                          <p class="card-text">
+                            <span class="namaleno">999:-</span>
+                            799:-
+                          </p>
+                          <a href="#" class="btn btn-primary ripple-surface">Add to Cart</a>
+                        </div>
+                      </div>
+                    </div>
+                    </div>
+      
+            <div class="row">
+              <div class="col-md-12 mt-3">
+                <div class="spinner-grow text-primary mx-auto my-5" id="spinner" role="status" style="display: none">
+                  <span class="visually-hidden">Loading...</span>
+                </div>
+              </div>
+            </div>
+          </section>
+         
+          
+          
+          
+          
+        </div>
+      </section>
+
+
+
+
+
+      <section id="pricing" class="pricing-content section-padding">
+        <div class="container">					
+          <div class="section-title text-center">
+            <h1>Pricing Plan</h1>
+            <p>Advance is our pick for best package subscription</p>
+          </div>					
+          <div class="row text-center">									
+            <div class="col-lg-4 col-sm-4 col-xs-12 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.1s" data-wow-offset="0">
+              <div class="single-pricing">
+                <div class="price-head">								
+                  <h2>Starter</h2>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </div>
+                <h1 class="price">249:-</h1>
+                <h5>Monthly</h5>
+                <ul>
+                  <li>Shampoo set</li>
+                  <li>15% off products</li>
+                  <li>New unreleased product testing</li>
+                </ul>
+                <a href="#">Add to Cart</a>
+              </div>
+            </div><!--- END COL -->	
+            <div class="col-lg-4 col-sm-4 col-xs-12 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.2s" data-wow-offset="0">
+              <div class="single-pricing">
+                <div class="price-head">								
+                  <h2>popular</h2>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </div>
+                <h1 class="price">399:-</h1>
+                <h5>Monthly</h5>
+                <ul>
+                  <li>Shampoo and conditioner set</li>
+                  <li>25% off products with subscription</li>
+                  <li>Easy-to-use hair quiz and website</li>
+                  <li>Early access to new product launches</li>
+                  <li>One free hair serum</li>
+                </ul>
+                <a href="#">Add to Cart</a>
+              </div>
+            </div><!--- END COL -->	
+            <div class="col-lg-4 col-sm-4 col-xs-12 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.3s" data-wow-offset="0">
+              <div class="single-pricing single-pricing-white">
+                <div class="price-head">								
+                  <h2>Advance</h2>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </div>
+                <span class="price-label">Best</span>
+                <h1 class="price">549:-</h1>
+                <h5>Monthly</h5>
+                <ul>
+                  <li> <span class="namaleno">  25%</span> <span class="namalenoo">35%</span> off products</li>
+                  <li>Shampoo, conditioner and beard set</li>
+                  <li>Free shipping and returns</li>
+                  <li>New unreleased product testing</li>
+                  <li>Limited-edition gifts exclusive to Salon members</li>
+                  <li>One free hair/beard serum</li>
+                  <li>Easy-to-use hair quiz and website</li>
+                </ul>
+                <a href="#">Add to Cart</a>
+              </div>
+            </div><!--- END COL -->			  
+          </div><!--- END ROW -->
+        </div><!--- END CONTAINER -->
+      </section>
+
+
+
+      <div id="section5" class="bg-white border rounded-5">
+    
+        <section class="w-100 p-4 d-flex justify-content-center pb-4">
+          <div style="width: 26rem;">
+            <!-- Pills navs -->
+            <ul class="nav nav-pills nav-justified mb-3" id="ex1" role="tablist">
+              <li class="nav-item" role="presentation">
+                <a class="nav-link active" id="tab-login" data-mdb-toggle="pill" href="#pills-login" role="tab" aria-controls="pills-login" aria-selected="true"><span class="greska">Login</span></a>
+              </li>
+              <li class="nav-item" role="presentation">
+                <a class="nav-link" id="tab-register" data-mdb-toggle="pill" href="#pills-register" role="tab" aria-controls="pills-register" aria-selected="false" tabindex="-1">Register</a>
+              </li>
+            </ul>
+            <!-- Pills navs -->
+    
+            <!-- Pills content -->
+            <div class="tab-content">
+              <div class="tab-pane fade show active" id="pills-login" role="tabpanel" aria-labelledby="tab-login">
+                <form>
+                  <div class="text-center mb-3">
+                    <p>Sign in with:</p>
+                    <button type="button" class="btn btn-link btn-floating mx-1">
+                      <i class="fab fa-facebook-f"></i>
+                    </button>
+    
+                    <button type="button" class="btn btn-link btn-floating mx-1">
+                      <i class="fab fa-google"></i>
+                    </button>
+    
+                    <button type="button" class="btn btn-link btn-floating mx-1">
+                      <i class="fab fa-twitter"></i>
+                    </button>
+    
+                    <button type="button" class="btn btn-link btn-floating mx-1">
+                      <i class="fab fa-github"></i>
+                    </button>
+                  </div>
+    
+                  <p class="text-center">or:</p>
+    
+                  <!-- Email input -->
+                  <div class="form-outline mb-4">
+                    <input type="email" id="loginName" class="form-control">
+                    <label class="form-label" for="loginName" style="margin-left: 0px;">Email or username</label>
+                  <div class="form-notch"><div class="form-notch-leading" style="width: 9px;"></div><div class="form-notch-middle" style="width: 114.4px;"></div><div class="form-notch-trailing"></div></div></div>
+    
+                  <!-- Password input -->
+                  <div class="form-outline mb-4">
+                    <input type="password" id="loginPassword" class="form-control">
+                    <label class="form-label" for="loginPassword" style="margin-left: 0px;">Password</label>
+                  <div class="form-notch"><div class="form-notch-leading" style="width: 9px;"></div><div class="form-notch-middle" style="width: 64.8px;"></div><div class="form-notch-trailing"></div></div></div>
+    
+                  <!-- 2 column grid layout -->
+                  <div class="row mb-4">
+                    <div class="col-md-6 d-flex justify-content-center">
+                      <!-- Checkbox -->
+                      <div class="form-check mb-3 mb-md-0">
+                        <input class="form-check-input" type="checkbox" value="" id="loginCheck" checked="">
+                        <label class="form-check-label" for="loginCheck"> Remember me </label>
+                      </div>
+                    </div>
+    
+                    <div class="col-md-6 d-flex justify-content-center">
+                      <!-- Simple link -->
+                      <a href="#!">Forgot password?</a>
+                    </div>
+                  </div>
+    
+                  <!-- Submit button -->
+                  <button type="submit" class="btn btn-primary btn-block mb-4">Sign in</button>
+    
+                  <!-- Register buttons -->
+                  <div class="text-center">
+                    <p>Not a member? <a href="#!">Register</a></p>
+                  </div>
+                </form>
+              </div>
+              <div class="tab-pane fade" id="pills-register" role="tabpanel" aria-labelledby="tab-register">
+                <form>
+                  <div class="text-center mb-3">
+                    <p>Sign up with:</p>
+                    <button type="button" class="btn btn-link btn-floating mx-1">
+                      <i class="fab fa-facebook-f"></i>
+                    </button>
+    
+                    <button type="button" class="btn btn-link btn-floating mx-1">
+                      <i class="fab fa-google"></i>
+                    </button>
+    
+                    <button type="button" class="btn btn-link btn-floating mx-1">
+                      <i class="fab fa-twitter"></i>
+                    </button>
+    
+                    <button type="button" class="btn btn-link btn-floating mx-1">
+                      <i class="fab fa-github"></i>
+                    </button>
+                  </div>
+    
+                  <p class="text-center">or:</p>
+    
+                  <!-- Name input -->
+                  <div class="form-outline mb-4">
+                    <input type="text" id="registerName" class="form-control">
+                    <label class="form-label" for="registerName" style="margin-left: 0px;">Name</label>
+                  <div class="form-notch"><div class="form-notch-leading" style="width: 9px;"></div><div class="form-notch-middle" style="width: 8px;"></div><div class="form-notch-trailing"></div></div></div>
+    
+                  <!-- Username input -->
+                  <div class="form-outline mb-4">
+                    <input type="text" id="registerUsername" class="form-control">
+                    <label class="form-label" for="registerUsername" style="margin-left: 0px;">Username</label>
+                  <div class="form-notch"><div class="form-notch-leading" style="width: 9px;"></div><div class="form-notch-middle" style="width: 8px;"></div><div class="form-notch-trailing"></div></div></div>
+    
+                  <!-- Email input -->
+                  <div class="form-outline mb-4">
+                    <input type="email" id="registerEmail" class="form-control">
+                    <label class="form-label" for="registerEmail" style="margin-left: 0px;">Email</label>
+                  <div class="form-notch"><div class="form-notch-leading" style="width: 9px;"></div><div class="form-notch-middle" style="width: 8px;"></div><div class="form-notch-trailing"></div></div></div>
+    
+                  <!-- Password input -->
+                  <div class="form-outline mb-4">
+                    <input type="password" id="registerPassword" class="form-control">
+                    <label class="form-label" for="registerPassword" style="margin-left: 0px;">Password</label>
+                  <div class="form-notch"><div class="form-notch-leading" style="width: 9px;"></div><div class="form-notch-middle" style="width: 8px;"></div><div class="form-notch-trailing"></div></div></div>
+    
+                  <!-- Repeat Password input -->
+                  <div class="form-outline mb-4">
+                    <input type="password" id="registerRepeatPassword" class="form-control">
+                    <label class="form-label" for="registerRepeatPassword" style="margin-left: 0px;">Repeat password</label>
+                  <div class="form-notch"><div class="form-notch-leading" style="width: 9px;"></div><div class="form-notch-middle" style="width: 8px;"></div><div class="form-notch-trailing"></div></div></div>
+    
+                  <!-- Checkbox -->
+                  <div class="form-check d-flex justify-content-center mb-4">
+                    <input class="form-check-input me-2" type="checkbox" value="" id="registerCheck" checked="" aria-describedby="registerCheckHelpText">
+                    <label class="form-check-label" for="registerCheck">
+                      I have read and agree to the terms
+                    </label>
+                  </div>
+    
+                  <!-- Submit button -->
+                  <button type="submit" class="btn btn-primary btn-block mb-3">Sign in</button>
+                </form>
+              </div>
+            </div>
+            <!-- Pills content -->
+          </div>
+        </section>
+
+
+
+        <footer class="text-center text-lg-start bg-light text-muted">
+          <!-- Section: Social media -->
+          <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+            <!-- Left -->
+            <div class="me-5 d-none d-lg-block">
+              <span>Get connected with us on social networks:</span>
+            </div>
+            <!-- Left -->
+  
+            <!-- Right -->
+            <div>
+              <a href="" class="me-4 text-reset">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+              <a href="" class="me-4 text-reset">
+                <i class="fab fa-twitter"></i>
+              </a>
+              <a href="" class="me-4 text-reset">
+                <i class="fab fa-google"></i>
+              </a>
+              <a href="" class="me-4 text-reset">
+                <i class="fab fa-instagram"></i>
+              </a>
+              <a href="" class="me-4 text-reset">
+                <i class="fab fa-linkedin"></i>
+              </a>
+              <a href="" class="me-4 text-reset">
+                <i class="fab fa-github"></i>
+              </a>
+            </div>
+            <!-- Right -->
+          </section>
+          <!-- Section: Social media -->
+  
+          <!-- Section: Links  -->
+          <section class="">
+            <div class="container text-center text-md-start mt-5">
+              <!-- Grid row -->
+              <div class="row mt-3">
+                <!-- Grid column -->
+                <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                  <!-- Content -->
+                  <h6 class="text-uppercase fw-bold mb-4">
+                    <i class="fas fa-gem me-3"></i>HAIRLY Shampoo
+                  </h6>
+                  <p>
+                    We were born from the belief that there is no one size fits all and that each person deserves a product just for them, tailored to their hair, skin types, goals, and preferences. Because we are rule breakers, scientists, data nerds and engineers at heart, we just decided to create it. 
+                  </p>
+                </div>
+                <!-- Grid column -->
+  
+                <!-- Grid column -->
+                <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                  <!-- Links -->
+                  <h6 class="text-uppercase fw-bold mb-4">
+                    Products
+                  </h6>
+                  <p>
+                    <a href="#section1" class="text-reset">Shampoo</a>
+                  </p>
+                  <p>
+                    <a href="#section2" class="text-reset">Conditioner</a>
+                  </p>
+                  <p>
+                    <a href="#section3" class="text-reset">Beard</a>
+                  </p>
+                  <p>
+                    <a href="#section4" class="text-reset">Package</a>
+                  </p>
+                </div>
+                <!-- Grid column -->
+  
+                <!-- Grid column -->
+                <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                  <!-- Links -->
+                  <h6 class="text-uppercase fw-bold mb-4">
+                    Useful links
+                  </h6>
+                  <p>
+                    <a href="#pricing" class="text-reset">Pricing</a>
+                  </p>
+                  <p>
+                    <a href="#section5" class="text-reset">Login</a>
+                  </p>
+                  
+                </div>
+                <!-- Grid column -->
+  
+                <!-- Grid column -->
+                <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                  <!-- Links -->
+                  <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+                  <p><i class="fas fa-home me-3"></i> Stockholm, SE 10012, SWE</p>
+                  <p>
+                    <i class="fas fa-envelope me-3"></i>
+                    hairly@example.com
+                  </p>
+                  <p><i class="fas fa-phone me-3"></i> + 01 234 567 88</p>
+                  <p><i class="fas fa-print me-3"></i> + 01 234 567 89</p>
+                </div>
+                <!-- Grid column -->
+              </div>
+              <!-- Grid row -->
+            </div>
+          </section>
+          <!-- Section: Links  -->
+  
+          <!-- Copyright -->
+          <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+            © 2023 Copyright:
+            <a class="text-reset fw-bold" href="https://mdbootstrap.com/">hairly.com</a>
+          </div>
+          <!-- Copyright -->
+        </footer>
+    
+
+        
+  
+
+
+    
+</body>
+</html>

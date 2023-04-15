@@ -1,0 +1,12 @@
+.card-body{
+    display: flex;
+    justify-content: space-around;
+}
+.shopping{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+#text1{
+    margin-top: 3vh;
+}
